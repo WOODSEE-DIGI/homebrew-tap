@@ -1,6 +1,6 @@
 cask "apex-flow" do
   version "1.0,1"
-  sha256 "a8a6bbfa818414149d48c7fc65734e59a38e17b0ee5b397664b5a21b6b4f5ab5"
+  sha256 "fa7b854b582ab32eb3f62cb37ee26897227cc7222dadc395af233e6853310c5d"
 
   url "https://github.com/WOODSEE-DIGI/ApexFlow/releases/download/v#{version.csv.first}/ApexFlow-#{version.csv.first}-#{version.csv.second}.dmg"
   name "Apex Flow"
@@ -26,8 +26,8 @@ cask "apex-flow" do
   ]
 
   caveats <<~EOS
-    Apex Flow is ad-hoc signed. On first launch, right-click the app and choose
-    "Open" to bypass Gatekeeper, or run:
-      xattr -dr com.apple.quarantine /Applications/ApexFlow.app
+    Apex Flow is signed with a Developer ID certificate and notarized by Apple.
+    On first launch you may still see a Gatekeeper prompt because the app was
+    downloaded from the internet; click "Open" to allow it.
   EOS
 end
