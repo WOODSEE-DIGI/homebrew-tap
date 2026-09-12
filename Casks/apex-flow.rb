@@ -1,6 +1,6 @@
 cask "apex-flow" do
-  version "1.0,2"
-  sha256 "ddf152e33e53c847bab53c59e7592ed8ead664fd56c7551b145aa8b110406043"
+  version "1.0,3"
+  sha256 "51c704970c80800b84204e954654a9fc9a5048c2e6e08f75d3a82d964ae1592d"
 
   url "https://github.com/WOODSEE-DIGI/ApexFlow/releases/download/v#{version.csv.first}/ApexFlow-#{version.csv.first}-#{version.csv.second}.dmg"
   name "Apex Flow"
